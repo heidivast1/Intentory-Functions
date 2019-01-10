@@ -48,15 +48,12 @@ console.log(listProducts(products));
 function totalValue(prods) {
   let inventory_value = 0;
   for (let i = 0; i < prods.length; i += 1){
-    
+    inventory_value += prods[i].inventory * prods[i].unit_price
   }
-
-  prod.inventory = all;
-  prod.unit_price = todo;
-  console.log(all*todo);
+return inventory_value;
 }
 
 // 6. Call the totalValue() function and log the returned value to the console.
-
+console.log(totalValue(products));
 
 // 7. Run your code by typing node 3_final_products.js in the console below
